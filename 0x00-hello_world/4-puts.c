@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
-*main: Describes the 
-*main function
-*of the program
+*main:Describes the main functionof the program
+*return- program returns (0)
 */
-
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle\n");
