@@ -1,26 +1,30 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 /**
-*main: entry point of the program
-*Return - 0
+*main: assigns arandom number
+*to variable n anytime it is
+*executed and prints it
+*Return - Always 0 (success)
 */
-
 int main(void)
 {
-int n;
+	int n;
 
-if ( n > 0)
-{
-printf("is positive");
-}
-
-else if (n == 0)
-{
-printf("is zero");
-}
-
-else
-{
-printf("is negative\n");
-}
-return (0);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	/* your code goes there */
+	if (n > 0)
+	{
+		printf(" %d is positive\n",n);
+	}
+	else if (n == 0)
+	{
+		printf(" %d is zero\n",n);
+	}
+	else
+	{
+		printf("%d is negative\n",n);
+	}
+	return (0);
 }
