@@ -6,17 +6,19 @@
 * to variable n each time it is
 * executed
 * Return: always 0 (success)
+*/
+
 int main(void)
 {
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
-if (n > 5)
+if(n > 5)
 {
 printf("Last digit of %d is greater than 5\n", n);
 }
-else if (n == 0)
+else if(n == 0)
 {
 printf("Last digit of %d is 0\n", n);
 }
